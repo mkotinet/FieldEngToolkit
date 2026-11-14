@@ -1,0 +1,22 @@
+WireNo,SignalType,From_Device,From_Pin,To_Device,To_Pin,Description
+L1,220V_L,CP01 (메인차단기),2,SMPS01 (파워서플라이),L,AC 220V 전원 입력선 L상
+N1,220V_N,CP01 (메인차단기),4,SMPS01 (파워서플라이),N,AC 220V 전원 입력선 N상
+GND,GND,GROUND_BUS,1,SMPS01 (파워서플라이),PE,외함 보호 접지 (PE)
+24V+,24V+,SMPS01 (파워서플라이),+V,FUSE01 (퓨즈블록),IN,DC 24V 메인 전원 버스
+24V-,24V-,SMPS01 (파워서플라이),-V,TB100 (공통단자),COM,DC 0V 공통 접지/리턴
+W101,DI,TB101,1,PLC_DI_M01,CH0,10-FIT-101 유량 정상 신호
+W102,DI,TB101,3,PLC_DI_M01,CH1,10-PIT-102 압력 하이 알람 접점
+W103,DI,TB101,5,PLC_DI_M01,CH2,10-LIT-103 레벨 하이 접점
+W104,DI,TB101,7,PLC_DI_M01,CH3,10-XV-105 밸브 Full Open 리미트
+W105,DI,TB101,9,PLC_DI_M01,CH4,10-XV-105 밸브 Full Close 리미트
+W201,DO,PLC_DO_M01,CH0,RY01 (릴레이),A1,10-XV-105 밸브 구동 솔레노이드 출력
+W202,DO,PLC_DO_M01,CH1,RY02 (릴레이),A1,PUMP-101 기동/정지 지령 출력
+W203,DO,PLC_DO_M01,CH2,BZ01 (경보부저),+,이상 경보 부저 구동
+W301+,AI,TB201,1,PLC_AI_M01,CH0+,10-FIT-101 유량 4~20mA (+)
+W301-,AI,TB201,2,PLC_AI_M01,CH0-,10-FIT-101 유량 4~20mA (-)
+W302+,AI,TB201,4,PLC_AI_M01,CH1+,10-PIT-102 압력 4~20mA (+)
+W302-,AI,TB201,5,PLC_AI_M01,CH1-,10-PIT-102 압력 4~20mA (-)
+W303+,AI,TB201,7,PLC_AI_M01,CH2+,10-TIT-104 온도 4~20mA (+)
+W303-,AI,TB201,8,PLC_AI_M01,CH2-,10-TIT-104 온도 4~20mA (-)
+W401+,AO,PLC_AO_M01,CH0+,TB202,1,10-HCV-106 제어밸브 개도 지령 (+)
+W401-,AO,PLC_AO_M01,CH0-,TB202,2,10-HCV-106 제어밸브 개도 지령 (-)
