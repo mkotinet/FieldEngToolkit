@@ -1,0 +1,13 @@
+TagNo,LoopNo,Service,Area,Signal
+10-FIT-101,1001,반응 원료 유입량 측정,반응공정 메인 배관동 (Zone 1),4~20mA HART
+10-PIT-102,1002,반응기 상부 돔 압력,반응기 상부 Deck (Zone 1),4~20mA HART
+10-LIT-103,1003,원료 회수 탱크 레벨,옥외 탱크 팜 (Zone 2),4~20mA HART
+10-TIT-104,1004,반응기 내부 촉매층 온도,반응기 중간 노즐 (Zone 1),RTD Pt100 / HART
+10-XV-105,1005,원료 공급 긴급 차단 (ESD),반응공정 인입 밸브 스테이션 (Zone 1),24VDC Solenoid & LS
+10-HCV-106,1006,공정 배출 유량 제어,반응공정 배출 배관 (Zone 1),4~20mA 스마트 포지셔너
+10-PIT-201,2001,열교환기 냉각수 입구 압력,유틸리티 설비동 (Zone 2),4~20mA HART
+10-TIT-202,2002,열교환기 냉각수 출구 온도,유틸리티 설비동 (Zone 2),RTD Pt100 / 4~20mA
+10-FIT-301,3001,질소 퍼지 공급 라인 유량,가스 공급 유닛 (Zone 1),4~20mA HART
+10-PSV-101,1099,반응탑 과압 방출 안전밸브 리미트,반응기 최상부 (Zone 1),Dry Contact (SPDT)
+10-AIT-101,1010,반응탑 배출가스 O2 농도 분석,분석계 Shelter (Safe Area),4~20mA / Modbus RS485
+10-LIT-401,4001,폐수 처리조 수위 측정,수처리 설비 구역 (Non-Ex / Safe Area),4~20mA 초음파식
